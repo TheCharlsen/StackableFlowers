@@ -7,7 +7,11 @@
 	"authors": [
 		"Charlsen"
 	],
+	"contributors": [
+		"Karmox"
+	],
 	"contact": {
+		"sources": "https://github.com/TheCharlsen/StackableFlowers"
 	},
 	"license": "AGPL-3.0",
 	"icon": "assets/stackableflowers/icon.png",
