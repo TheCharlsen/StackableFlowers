@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "stackableflowers",
+	"version": "${version}",
+	"name": "Stackable Flowers",
+	"description": "Ever wanted to stack Flowers? Well now you can!",
+	"authors": [
+		"Charlsen"
+	],
+	"contact": {
+	},
+	"license": "AGPL-3.0",
+	"icon": "assets/stackableflowers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sunnyspaceweather.StackableFlowers"
+		],
+		"client": [
+			"com.sunnyspaceweather.StackableFlowersClient"
+		],
+		"fabric-datagen": [
+			"com.sunnyspaceweather.StackableFlowersDataGenerator"
+		]
+	},
+	"mixins": [
+		"stackableflowers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
