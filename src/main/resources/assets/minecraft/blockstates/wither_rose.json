@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "flower_amount=1": [
+      {
+        "model": "minecraft:block/wither_rose_1"
+      }
+    ],
+    "flower_amount=2": [
+      {
+        "model": "minecraft:block/wither_rose_2"
+      }
+    ],
+    "flower_amount=3": [
+      {
+        "model": "minecraft:block/wither_rose_3"
+      }
+    ],
+    "flower_amount=4": [
+      {
+        "model": "minecraft:block/wither_rose_4"
+      }
+    ]
+  }
+}

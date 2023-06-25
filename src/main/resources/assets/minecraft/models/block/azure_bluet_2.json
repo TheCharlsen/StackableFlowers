@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/stacked_2",
+  "textures": {
+    "1": "minecraft:block/azure_bluet"
+  }
+}

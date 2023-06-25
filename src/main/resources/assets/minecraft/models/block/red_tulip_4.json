@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/stacked_4",
+  "textures": {
+    "1": "minecraft:block/red_tulip"
+  }
+}

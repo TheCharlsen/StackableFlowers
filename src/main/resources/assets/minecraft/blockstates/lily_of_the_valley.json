@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "flower_amount=1": [
+      {
+        "model": "minecraft:block/lily_of_the_valley_1"
+      }
+    ],
+    "flower_amount=2": [
+      {
+        "model": "minecraft:block/lily_of_the_valley_2"
+      }
+    ],
+    "flower_amount=3": [
+      {
+        "model": "minecraft:block/lily_of_the_valley_3"
+      }
+    ],
+    "flower_amount=4": [
+      {
+        "model": "minecraft:block/lily_of_the_valley_4"
+      }
+    ]
+  }
+}

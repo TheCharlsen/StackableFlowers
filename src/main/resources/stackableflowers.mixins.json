@@ -3,7 +3,7 @@
 	"package": "com.sunnyspaceweather.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"FlowerBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

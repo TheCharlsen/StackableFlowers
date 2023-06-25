@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/stacked_3",
+  "textures": {
+    "1": "minecraft:block/wither_rose"
+  }
+}
