@@ -34,7 +34,7 @@ public class FlowerBlockMixin extends PlantBlock implements SuspiciousStewIngred
         this.effectInStewDuration = suspiciousStewEffect.isInstant() ? effectDuration : effectDuration * 20;
         this.setDefaultState((BlockState)((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FLOWER_AMOUNT, 1)));
     }
-    @Override
+
     public boolean canReplace(BlockState state, ItemPlacementContext context) {
         if (!context.shouldCancelInteraction() && context.getStack().isOf(this.asItem()) && state.get(FLOWER_AMOUNT) < 4) {
             return true;
@@ -42,7 +42,7 @@ public class FlowerBlockMixin extends PlantBlock implements SuspiciousStewIngred
         return super.canReplace(state, context);
     }
 
-    @Override
+
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockState blockState = ctx.getWorld().getBlockState(ctx.getBlockPos());
         if (blockState.isOf(this)) {
@@ -51,12 +51,12 @@ public class FlowerBlockMixin extends PlantBlock implements SuspiciousStewIngred
         return this.getDefaultState();
     }
 
-    @Override
+
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FLOWER_AMOUNT);
     }
 
-    @Override
+
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Vec3d vec3d = state.getModelOffset(world, pos);
         switch (state.get(FLOWER_AMOUNT)) {
@@ -74,27 +74,27 @@ public class FlowerBlockMixin extends PlantBlock implements SuspiciousStewIngred
         return FOUR_FLOWER_SHAPE.offset(vec3d.x, vec3d.y, vec3d.z);
     }
 
-    @Override
+
     public StatusEffect getEffectInStew() {
         return this.effectInStew;
     }
 
-    @Override
+
     public int getEffectInStewDuration() {
         return this.effectInStewDuration;
     }
 
-    @Override
+
     public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         return true;
     }
 
-    @Override
+
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
         return true;
     }
 
-    @Override
+
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         int i = state.get(FLOWER_AMOUNT);
         if (i < 4) {
